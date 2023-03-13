@@ -1,0 +1,12 @@
+sprites/Portal/xpm/3porter48.xpm
+sprites/Portal/xpm/4porter48.xpm
+sprites/Portal/xpm/5porter48.xpm
+sprites/Portal/xpm/6porter48.xpm
+sprites/Portal/xpm/7porter48.xpm
+sprites/Portal/xpm/8porter48.xpm
+sprites/Portal/xpm/9porter48.xpm
+sprites/Portal/xpm/10porter48.xpm
+sprites/Portal/xpm/11porter48.xpm
+sprites/Portal/xpm/12porter48.xpm
+sprites/Portal/xpm/13porter48.xpm
+sprites/Portal/xpm/14porter48.xpm

@@ -1,0 +1,2 @@
+sprites/Player/Mikusp_Sprite.xpm
+sprites/Player/Mikusp_spriteinvert.xpm

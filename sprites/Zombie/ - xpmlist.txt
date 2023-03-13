@@ -1,0 +1,2 @@
+sprites/Zombie/Zombie.xpm
+sprites/Zombie/Zombieinvert.xpm

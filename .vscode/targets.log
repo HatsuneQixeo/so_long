@@ -1,0 +1,763 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Mon Mar 13 03:31:23 2023
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 19)
+LIBFT_MAKE := make -C libft
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/hqixeo/Downloads/code/kickoff/so_long/Active
+# environment
+Black = \033[30m
+ 
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 13)
+RM := rm -rf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 11)
+CFLAGS := -Wall -Wextra -Werror
+# environment
+Green = \033[32m
+# environment
+White = \033[37m
+# environment
+Blue = \033[34m
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 5)
+OBJ_DIR := obj/
+# makefile (from `Makefile', line 7)
+OBJS :=  obj/debug.o  obj/debug_utils.o  obj/exit.o  obj/image_creation.o  obj/image_creation_utils.o  obj/initialize.o  obj/input.o  obj/main.o  obj/map_evaluate.o  obj/pathfind.o  obj/update.o  obj/utils_axis.o  obj/utils_axisfind.o  obj/utils_math.o  obj/utils_mlx_display.o  obj/validpath.o
+# environment
+VSCODE_CWD = /Users/hqixeo/Downloads/code/kickoff/cpp/03re/ex01
+# environment
+Red = \033[31m
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Users/hqixeo/exec:/Users/hqixeo/Desktop/Visual Studio Code.app/Contents/Resources/app/bin
+# environment
+B_Yellow = \033[43m
+# makefile (from `Makefile', line 21)
+LIBFT := libft/libft.a
+# environment
+LaunchInstanceID = 460890E3-57E7-425F-955F-44AE8ED91F5C
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+Blinking = \033[5m
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.tlHIDHNXnC/Listeners
+# environment
+Magenta = \033[35m
+# makefile (from `Makefile', line 37)
+map := test
+# environment
+PWD = /Users/hqixeo/Downloads/code/kickoff/so_long/Active
+# environment
+CODE = /Users/hqixeo/Downloads/code/kickoff
+# environment
+B_Black = \033[40m
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/hqixeo
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/hqixeo/Library/Application Support/Code/CachedData/441438abd1ac652551dbe4d408dfcec8a499b8bf
+# environment
+B_Blue = \033[44m
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+B_Magenta = \033[45m
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+Inverse = \033[7m
+# environment
+EVAL = /Users/hqixeo/Downloads/code/kickoff_ev
+# environment
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PDF = /Users/hqixeo/Downloads/pdf
+# makefile (from `Makefile', line 3)
+SRCS := debug.c debug_utils.c exit.c image_creation.c image_creation_utils.c initialize.c input.c main.c map_evaluate.c pathfind.c update.c utils_axis.c utils_axisfind.c utils_math.c utils_mlx_display.c validpath.c
+# environment
+SHLVL = 3
+# environment
+B_Cyan = \033[46m
+# makefile (from `Makefile', line 9)
+CC := gcc
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = hqixeo
+# environment
+B_Red = \033[41m
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 17)
+INCLUDE := -I libft/include
+# environment
+TERM_SESSION_ID = w0t0p1:AD3BE032-1A25-4690-8EA8-28CEC16D1C77
+# makefile (from `Makefile', line 1)
+NAME := so_long
+# environment
+PRG = /Users/hqixeo/exec
+# environment
+Reset = \033[0m
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+DOWNLOADS = /Users/hqixeo/Downloads
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000ccl000334r/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/hqixeo/Library/Application Support/Code/1.75.1-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# environment
+GIT = /Users/hqixeo/Documents/GitHub
+# environment
+TERM_PROGRAM_VERSION = 3.2.5
+# environment
+MAIL = hqixeo@student.42kl.edu.my
+# environment
+XPC_SERVICE_NAME = 0
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# automatic
+%F = $(notdir $%)
+# environment
+ITERM_SESSION_ID = w0t0p1:AD3BE032-1A25-4690-8EA8-28CEC16D1C77
+# environment
+Yellow = \033[33m
+# environment
+Underline = \033[4m
+# environment
+COLORFGBG = 15;0
+# environment
+Bold = \033[1m
+# environment
+__CF_USER_TEXT_ENCODING = 0x18C98:0x0:0x2
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
+# environment
+Cyan = \033[36m
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 15)
+HEADER := so_long.h sl_image_factory.h
+# environment
+SECURITYSESSIONID = 186a5
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+ 
+# makefile (from `Makefile', line 40)
+MAPS := maps/test.ber
+# environment
+MIKU = Hatsune Miku
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+LOGNAME = hqixeo
+# environment
+B_Green = \033[42m
+# environment
+VSCODE_PID = 2100
+# environment
+B_White = \033[47m
+# variable set hash-table stats:
+# Load=111/1024=11%, Rehash=0, Collisions=10/149=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777228, inode 714546): 30 files, no impossibilities.
+
+# 30 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+obj/%.o: %.c so_long.h sl_image_factory.h
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+obj/image_creation.o: image_creation.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `image_creation'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# Not a target:
+map_evaluate.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-09-30 16:48:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+image_creation_utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2023-01-27 19:32:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: obj/ so_long
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+initialize.c:
+#  Implicit rule search has been done.
+#  Last modified 2023-02-02 19:16:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/debug_utils.o: debug_utils.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `debug_utils'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+.PHONY:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+validpath.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-09-27 22:58:37
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  Last modified 2023-01-27 19:40:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/validpath.o: validpath.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `validpath'
+#  Last modified 2023-03-03 18:56:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+obj/update.o: update.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `update'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+obj/main.o: main.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `main'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# Not a target:
+utils_mlx_display.c:
+#  Implicit rule search has been done.
+#  Last modified 2023-01-27 19:16:58
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-02-23 01:23:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+utils_axisfind.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-16 01:04:45
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+debug_utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-09-27 20:09:18
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 67):
+	${LIBFT_MAKE} $@
+	
+
+san: obj/ obj/debug.o obj/debug_utils.o obj/exit.o obj/image_creation.o obj/image_creation_utils.o obj/initialize.o obj/input.o obj/main.o obj/map_evaluate.o obj/pathfind.o obj/update.o obj/utils_axis.o obj/utils_axisfind.o obj/utils_math.o obj/utils_mlx_display.o obj/validpath.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 33):
+	${LIBFT_MAKE}
+	${CC} ${CFLAGS} ${OBJS} ${LIBFT} -lmlx -framework OpenGL -framework AppKit -o ${NAME} -fsanitize=address
+	
+
+# Not a target:
+exit.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-04 22:42:30
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+so_long.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-16 01:04:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+utils_axis.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-09-27 16:16:57
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+pathfind.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-20 07:12:20
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/utils_math.o: utils_math.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `utils_math'
+#  Last modified 2023-03-03 18:56:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# Not a target:
+image_creation.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-09 06:24:10
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+fclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 58):
+	${LIBFT_MAKE} fclean
+	${RM} ${NAME} ${EX}
+	
+
+obj/input.o: input.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `input'
+#  Last modified 2023-03-03 18:56:15
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+obj/:
+#  Implicit rule search has not been done.
+#  Last modified 2023-03-03 18:56:16
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 26):
+	mkdir $@
+	
+
+obj/debug.o: debug.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `debug'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# Not a target:
+sl_image_factory.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-11 20:29:12
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+norm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 64):
+	norminette ${SRCS} ${HEADER} | grep -v header
+	
+
+obj/pathfind.o: pathfind.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `pathfind'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+input.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-07 19:08:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/image_creation_utils.o: image_creation_utils.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `image_creation_utils'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# Not a target:
+update.c:
+#  Implicit rule search has been done.
+#  Last modified 2023-01-27 19:38:55
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+re: fclean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-09-28 17:46:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+run: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 43):
+	clear
+	./${NAME} ${MAPS}
+	
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 54):
+	${LIBFT_MAKE} clean
+	${RM} ${OBJ_DIR}
+	
+
+obj/initialize.o: initialize.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `initialize'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+runsan: san
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 47):
+	clear
+	./${NAME} ${MAPS}
+	
+
+obj/utils_mlx_display.o: utils_mlx_display.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `utils_mlx_display'
+#  Last modified 2023-03-03 18:56:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+obj/utils_axisfind.o: utils_axisfind.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `utils_axisfind'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+so_long: obj/debug.o obj/debug_utils.o obj/exit.o obj/image_creation.o obj/image_creation_utils.o obj/initialize.o obj/input.o obj/main.o obj/map_evaluate.o obj/pathfind.o obj/update.o obj/utils_axis.o obj/utils_axisfind.o obj/utils_math.o obj/utils_mlx_display.o obj/validpath.o
+#  Implicit rule search has not been done.
+#  Last modified 2023-03-03 18:57:24
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 29):
+	${LIBFT_MAKE}
+	${CC} ${CFLAGS} $^ ${LIBFT} -lmlx -framework OpenGL -framework AppKit -o $@
+	
+
+# Not a target:
+utils_math.c:
+#  Implicit rule search has been done.
+#  Last modified 2023-01-27 19:14:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/map_evaluate.o: map_evaluate.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `map_evaluate'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+obj/exit.o: exit.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `exit'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+sprite:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 70):
+	make -C /Users/hqixeo/Downloads $(sp)
+	
+
+obj/utils_axis.o: utils_axis.c so_long.h sl_image_factory.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `utils_axis'
+#  Last modified 2023-03-03 18:56:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	
+
+# files hash-table stats:
+# Load=50/1024=5%, Rehash=0, Collisions=6/215=3%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon Mar 13 03:31:23 2023
+
+ 
