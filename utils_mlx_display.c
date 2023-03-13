@@ -29,12 +29,12 @@ void	ft_mlx_image(t_game *g, t_image *image, t_axis i, t_axis *offset)
 		debug_axis(i, "Invalid image at: ", 0);
 	else if (offset)
 		mlx_put_image_to_window(g->mlx, g->win, image->mlx,
-			ft_mlx_centered(i.x, image->width + offset->x),
-			ft_mlx_invert(BAR_HEIGHT + i.y, image->height + offset->y));
+			mlx_offset_centered(i.x, image->width + offset->x),
+			mlx_offset_invert(BAR_HEIGHT + i.y, image->height + offset->y));
 	else
 		mlx_put_image_to_window(g->mlx, g->win, image->mlx,
-			ft_mlx_centered(i.x, image->width),
-			ft_mlx_invert(BAR_HEIGHT + i.y, image->height));
+			mlx_offset_centered(i.x, image->width),
+			mlx_offset_invert(BAR_HEIGHT + i.y, image->height));
 }
 
 void	ft_mlx_entityptr(t_game *g, t_image *image, t_list *lst_uaxis,

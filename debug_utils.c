@@ -27,12 +27,12 @@ void	ft_shownb(char *name, long long int nb)
 
 void	ft_show_rgba(void *ptr, size_t size)
 {
-	unsigned char	*str;
-	size_t			i;
-	size_t			pixel;
+	uint8_t	*str;
+	size_t	i;
+	size_t	pixel;
 
 	pixel = 1;
-	str = (unsigned char *)ptr;
+	str = (uint8_t *)ptr;
 	size /= 4;
 	while (size--)
 	{

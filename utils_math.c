@@ -22,7 +22,7 @@ int	ft_direction(int x)
 }
 
 //Return the positive value of nb
-int	ft_distance(int nb)
+int	ft_abs(int nb)
 {
 	if (nb < 0)
 		return (-nb);
@@ -31,17 +31,17 @@ int	ft_distance(int nb)
 }
 
 //Return the sumed positive value of vector x and y
-size_t	ft_distance_total(t_axis vector)
+size_t	ft_abs_sumaxis(t_axis vector)
 {
-	return (ft_distance(vector.x) + ft_distance(vector.y));
+	return (ft_abs(vector.x) + ft_abs(vector.y));
 }
 
-int	ft_mlx_invert(size_t axis, int size)
+int	mlx_offset_invert(size_t axis, int size)
 {
 	return (((axis * PIXEL) - (size - PIXEL)));
 }
 
-int	ft_mlx_centered(size_t axis, int size)
+int	mlx_offset_centered(size_t axis, int size)
 {
 	return ((axis * PIXEL) - ((size - PIXEL) / 2));
 }

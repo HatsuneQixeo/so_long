@@ -12,8 +12,7 @@
 #include "sl_image_factory.h"
 
 //Return colour value with given rgba
-unsigned int	ft_get_colour(unsigned char r, unsigned char g,
-		unsigned char b, unsigned char a)
+uint32_t	ft_get_colour(uint8_t r, uint8_t g, uint8_t b, uint8_t a)
 {
 	return ((r * 0x010000) + (g * 0x0100) + b + (a * 0x01000000));
 }
@@ -77,34 +76,14 @@ t_image	*ft_image_xpm(void *mlx, char *file)
 	return (img);
 }
 
-//Find the given colour inside given image data within given size
-//and apply the given transparency of the colour in given image data
-//0 is opaque, 255 is fully transparent
-//Note: This function take transparency into comparison
-//Remain unused for this project
-// void	ft_transparent(t_data data, size_t size,
-// 			unsigned int colour, unsigned char transparency)
-// {
-// 	unsigned int	*ptr;
-
-// 	ptr = (unsigned int *)data.address;
-// 	size /= 4;
-// 	while (size--)
-// 	{
-// 		if (*ptr == colour)
-// 			*ptr = (*ptr % VALUE_T) + (VALUE_T * transparency);
-// 		ptr++;
-// 	}
-// }
-
 void	ft_img_transparentize(t_data data, uint8_t transparency)
 {
 	uint32_t	*ptr;
-	size_t		size;
+	size_t		len;
 
 	ptr = (uint32_t *)data.address;
-	size = data.size / 4;
-	while (size--)
+	len = data.size / sizeof(uint32_t);
+	while (len--)
 	{
 		*ptr = (*ptr % VALUE_T) + (VALUE_T * transparency);
 		ptr++;

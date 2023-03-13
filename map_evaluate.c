@@ -90,7 +90,7 @@ t_map	ft_map_evaluate(t_map map)
 	while (map.structure[++map.size.y])
 	{
 		len = ft_strlen(map.structure[map.size.y]);
-		if (!len)
+		if (len == 0)
 			ft_error_map(map, "Excessive Newline", &(t_axis){0, map.size.y});
 		else if (len != map.size.x)
 			ft_error_map(map, "Unalign Border", &map.size);

@@ -13,7 +13,7 @@
 
 static t_axis	ft_prio_hrz(t_axis zombie, t_axis vector, int prio)
 {
-	if (!prio)
+	if (prio == 0)
 		zombie.x += ft_direction(vector.x);
 	else if (prio == 1)
 		zombie.y += ft_direction(vector.y);
@@ -26,7 +26,7 @@ static t_axis	ft_prio_hrz(t_axis zombie, t_axis vector, int prio)
 
 static t_axis	ft_prio_vrt(t_axis zombie, t_axis vector, int prio)
 {
-	if (!prio)
+	if (prio == 0)
 		zombie.y += ft_direction(vector.y);
 	else if (prio == 1)
 		zombie.x += ft_direction(vector.x);
@@ -41,9 +41,9 @@ static t_axis	ft_prio(t_map map, t_uaxis *zombie, t_axis vector, int prio)
 {
 	t_axis	move;
 
-	if ((!vector.y && !vector.x) || prio == 4)
+	if (vector.y + vector.x == 0 || prio == 4)
 		return (zombie->nextmove);
-	if (ft_distance(vector.x) <= ft_distance(vector.y))
+	if (ft_abs(vector.x) <= ft_abs(vector.y))
 		move = ft_prio_vrt(zombie->nextmove, vector, prio);
 	else
 		move = ft_prio_hrz(zombie->nextmove, vector, prio);
@@ -70,7 +70,7 @@ t_axis	ft_nearesttarget(t_axis unit, t_list *target)
 	while (target)
 	{
 		cmp = ft_vector(unit, ft_getaxis(target->content));
-		if (ft_distance_total(cmp) < ft_distance_total(near))
+		if (ft_abs_sumaxis(cmp) < ft_abs_sumaxis(near))
 			near = cmp;
 		target = target->next;
 	}

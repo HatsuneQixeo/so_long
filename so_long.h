@@ -99,11 +99,11 @@ void	ft_pathfind(t_game *g, t_list *unit, t_list *target);
 
 //UTILS
 //math
-int		ft_distance(int nb);
+int		ft_abs(int nb);
 int		ft_direction(int x);
-int		ft_mlx_invert(size_t axis, int size);
-int		ft_mlx_centered(size_t axis, int size);
-size_t	ft_distance_total(t_axis vector);
+int		mlx_offset_invert(size_t axis, int size);
+int		mlx_offset_centered(size_t axis, int size);
+size_t	ft_abs_sumaxis(t_axis vector);
 
 //axisfind
 int		ft_axiscmp(t_axis axis1, t_axis axis2);

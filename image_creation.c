@@ -12,13 +12,13 @@
 #include "so_long.h"
 
 //Note: len is default as the index (does not need n * sizeof(int))
-void	ft_intset(unsigned int *ptr, unsigned int set, size_t len)
+void	ft_intset(uint32_t *ptr, uint32_t set, size_t len)
 {
 	while (len--)
 		ptr[len] = set;
 }
 
-void	ft_mlx_colourfill(t_data data, unsigned int colour,
+void	ft_mlx_colourfill(t_data data, uint32_t colour,
 			t_axis start, t_axis end)
 {
 	void	*ptr;
@@ -39,7 +39,7 @@ void	ft_mlx_colourfill(t_data data, unsigned int colour,
 //Create a PIXEL size image with given colour
 //with opaque border and some transparency within
 //Note: Border is opaque regardless of the given colour value
-t_image	*ft_mlx_create_ptr(void *mlx, unsigned int colour)
+t_image	*ft_mlx_create_ptr(void *mlx, uint32_t colour)
 {
 	t_image	*pointer;
 	int		border;
@@ -54,13 +54,13 @@ t_image	*ft_mlx_create_ptr(void *mlx, unsigned int colour)
 	data_ptr = ft_data_address(pointer);
 	ft_mlx_colourfill(data_ptr, colour,
 		(t_axis){0, 0}, (t_axis){PIXEL, PIXEL});
-	ft_mlx_colourfill(data_ptr, colour + (unsigned int)VALUE_T * 180,
+	ft_mlx_colourfill(data_ptr, colour + (uint32_t)VALUE_T * 180,
 		(t_axis){border, border}, (t_axis){PIXEL - border, PIXEL - border});
 	return (pointer);
 }
 
-// t_image	*ft_mlx_create_colour_tile(void *mlx, unsigned int colour,
-// 			unsigned int colour_border, t_range )
+// t_image	*ft_mlx_create_colour_tile(void *mlx, uint32_t colour,
+// 			uint32_t colour_border, t_range )
 // {
 // 	t_image	*pointer;
 // 	int		border;
@@ -75,7 +75,7 @@ t_image	*ft_mlx_create_ptr(void *mlx, unsigned int colour)
 // 	data_ptr = ft_data_address(pointer);
 // 	ft_mlx_colourfill(data_ptr, colour,
 // 		(t_axis){0, 0}, (t_axis){PIXEL, PIXEL});
-// 	ft_mlx_colourfill(data_ptr, colour + (unsigned int)VALUE_T * 180,
+// 	ft_mlx_colourfill(data_ptr, colour + (uint32_t)VALUE_T * 180,
 // 		(t_axis){border, border}, (t_axis){PIXEL - border, PIXEL - border});
 // 	return (pointer);
 // }

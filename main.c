@@ -35,10 +35,10 @@ int	ft_digit_count(size_t nbr)
 
 void	ft_memprint(void *ptr, size_t bytes, int data_size)
 {
-	int				pad;
-	unsigned char	*ucptr;
-	size_t			i_b;
-	size_t			i;
+	int		pad;
+	uint8_t	*ucptr;
+	size_t	i_b;
+	size_t	i;
 
 	if (data_size <= 0)
 		return ;

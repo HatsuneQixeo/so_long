@@ -32,11 +32,9 @@ static void	ft_sprite(t_game *g)
 {
 	g->map.space = ft_image_xpm(g->mlx, "sprites/Tile/Marble_tile48.xpm");
 	ft_img_transparentize(ft_data_address(g->map.space), 180);
-	// g->map.space = ft_mlx_create_ptr(g->mlx, ft_get_colour(0, 0, 0, 0));
 	g->map.wall = ft_image_xpm(g->mlx, "sprites/Tile/Wall48.xpm");
 	ft_img_transparentize(ft_data_address(g->map.wall), 180);
-	g->map.collectible.lst_img = ft_lstnew
-		(ft_image_xpm(g->mlx, "sprites/Collect/leek48.xpm"));
+	g->map.collectible.lst_img = ft_image_newlst(g, "sprites/Collect/ - xpmlist.txt");
 	g->map.player.lst_img = ft_image_newlst(g, "sprites/Player/ - xpmlist.txt");
 	g->map.zombie.lst_img = ft_image_newlst(g, "sprites/Zombie/ - xpmlist.txt");
 	g->map.exit.lst_img = ft_image_newlst(g, "sprites/Portal/ - xpmlist.txt");
@@ -64,21 +62,7 @@ static t_map	ft_map_extract(char *file_map)
 {
 	t_map	map;
 
-	map.structure = 0;
-	map.space = 0;
-	map.wall = 0;
-	map.player.lst_uaxis = 0;
-	map.player.lst_img = 0;
-	map.zombie.lst_uaxis = 0;
-	map.zombie.lst_img = 0;
-	map.collectible.lst_uaxis = 0;
-	map.collectible.lst_img = 0;
-	map.exit.lst_uaxis = 0;
-	map.exit.lst_img = 0;
-	map.p_ptr = 0;
-	map.z_ptr = 0;
-	map.ui = 0;
-	map.e_ptr = 0;
+	ft_bzero(&map, sizeof(t_map));
 	if (!ft_file_format(file_map, ".ber"))
 		ft_exit(0);
 	map.structure = ft_file_extract_lst(file_map);

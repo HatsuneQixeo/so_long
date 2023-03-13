@@ -14,7 +14,7 @@
 // Return a value if the axis does not match
 int	ft_axiscmp(t_axis axis1, t_axis axis2)
 {
-	return (!(axis1.y == axis2.y && axis1.x == axis2.x));
+	return ((axis1.y != axis2.y) || (axis1.x != axis2.x));
 }
 
 //Return axis in the given uaxis
