@@ -28,6 +28,20 @@ static t_list	*ft_image_newlst(t_game *g, char *filelist)
 
 void	ft_img_transparentize(t_data data, uint8_t transparency);
 
+uint8_t	transparent_value(uint16_t newTransparency)
+{
+	static uint8_t	transparency = 180;
+
+	if ((newTransparency & ~0xFF) == 0) /* So Cursed */
+		transparency = newTransparency;
+	return (transparency);
+}
+
+void	iter_transparentize(void *image)
+{
+	ft_img_transparentize(ft_data_address(image), transparent_value(UINT16_MAX));
+}
+
 static void	ft_sprite(t_game *g)
 {
 	g->map.space = ft_image_xpm(g->mlx, "sprites/Tile/Marble_tile48.xpm");
@@ -38,6 +52,8 @@ static void	ft_sprite(t_game *g)
 	g->map.player.lst_img = ft_image_newlst(g, "sprites/Player/ - xpmlist.txt");
 	g->map.zombie.lst_img = ft_image_newlst(g, "sprites/Zombie/ - xpmlist.txt");
 	g->map.exit.lst_img = ft_image_newlst(g, "sprites/Portal/ - xpmlist.txt");
+	transparent_value(145);
+	ft_lstiter(g->map.exit.lst_img, iter_transparentize);
 	g->map.ui = ft_mlx_create_ptr(g->mlx, ft_get_colour(50, 100, 100, 0));
 	if (g->map.space == NULL)
 		ft_exit("Error\nMissing xpm for space");

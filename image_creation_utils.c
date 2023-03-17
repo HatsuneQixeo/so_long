@@ -85,7 +85,9 @@ void	ft_img_transparentize(t_data data, uint8_t transparency)
 	len = data.size / sizeof(uint32_t);
 	while (len--)
 	{
-		*ptr = (*ptr % VALUE_T) + (VALUE_T * transparency);
+		if ((*ptr & 0xFF000000) != 0xFF000000)
+			*ptr = (*ptr % VALUE_T) + (VALUE_T * transparency);
+		// *ptr |= VALUE_T * transparency;
 		ptr++;
 	}
 }
