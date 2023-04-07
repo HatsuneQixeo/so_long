@@ -37,6 +37,24 @@ uint8_t	transparent_value(uint16_t newTransparency)
 	return (transparency);
 }
 
+void	img_colour_invert(void *img)
+{
+	t_data			data = ft_data_address(img);
+	uint32_t		*address = (uint32_t *)data.address;
+	const size_t	length = data.size / sizeof(uint32_t);
+
+	for (unsigned int i = 0; i < length; i++)
+	{
+		uint32_t	value_a = (address[i]) & A_MASK;
+
+		if (value_a == A_MASK)
+			continue ;
+		address[i] = ~address[i];
+		address[i] &= ~A_MASK;
+		address[i] |= value_a;
+	}
+}
+
 void	iter_transparentize(void *image)
 {
 	ft_img_transparentize(ft_data_address(image), transparent_value(UINT16_MAX));

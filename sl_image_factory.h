@@ -18,6 +18,10 @@
 
 # define PIXEL		48
 # define BAR_HEIGHT	1
+# define A_MASK		0XFF000000
+# define R_MASK		0X00FF0000
+# define G_MASK		0X0000FF00
+# define B_MASK		0X000000FF
 # define VALUE_T	0x01000000
 
 typedef struct image
